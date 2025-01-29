@@ -1,0 +1,18 @@
+To use Camera witrh Raspberry pi-5, open the terminal by pressing Ctrl+Alt+T,
+then use the following commnads.
+
+1. To test the Camera
+	$libcamera-hello
+
+2.	To capture image
+	$libcamera-jpeg -o Test.jpeg
+
+3.	To capture video [The following command will capture the video for 10 seconds in mp4 format]
+	$libcamera-vid -t 10s -o Test.mp4
+
+Note:
+	a]	The $ symbol in every command indicats the command prompt and is 
+		not hte part of the command. hence you nbeed to type the
+		command by ommiting the $ symbol
+	b]	The images / Videos are stored in the current directory open 
+		in the command prompt
