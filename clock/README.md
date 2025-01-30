@@ -11,5 +11,5 @@ Thanks to TM1637 Driver which controls the 4 digit 7 segment display by using on
 ## Connection with Raspberry Pi
 
 |RPI Connector|7-Segment|
-|-------------|---------|
+|:-----------:|:-------:|
 |	SV8		  |	  J1    |

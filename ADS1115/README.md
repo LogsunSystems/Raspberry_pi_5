@@ -4,7 +4,7 @@
 ## Connecting to RPI
 As mentioned earlier the ADS1115 used I2C protocol and hence we have to connect it to the I2C pins of Raspberry Pi
 
-|No.|Connector No|ADS1115|
-|---|------------|-------|
-| 1 |    SV7     |   J1  |    
+|Raspberry Pi|ADS1115|
+|:----------:|:-----:|
+|    SV7     |   J1  |    
 

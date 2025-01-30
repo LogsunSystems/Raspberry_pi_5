@@ -21,7 +21,7 @@ by using command line utility **raspi-config**.
 ## Connections wit Raspberry Pi
 
 |Raspberry Pi|     GPS Module   |
-|------------|------------------|
+|:----------:|:----------------:|
 |	 SV5	 | J2 (LCD_Data)	|
 |	 SV6	 | J1 (LCD_CMD)		|
 |	 SV8	 | J3 (GPS  Sensor) |
