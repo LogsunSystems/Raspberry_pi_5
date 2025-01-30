@@ -1,6 +1,6 @@
 # Raspberry PI 5 Interfacing
 
-![image of RPI](RPI.JPG)
+![image of RPI](RPI.jpg)
 
 **Raspberry Pi** is a *Single Board Computer* (SBC) developed by Raspberry Pi Foundation.  It has Broadcom SOC at its heart. IT primarily runs on Linux. 
 
