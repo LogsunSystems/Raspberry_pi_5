@@ -14,27 +14,27 @@ LCD_D6 = 24
 LCD_D7 = 25
 
 
-chip = GPIO.Chip('gpiochip4')
-RS_line = chip.get_line(LCD_RS)
-RS_line.request(consumer = "RS",type=GPIO.LINE_REQ_DIR_OUT)
+chip = GPIO.Chip('gpiochip4') 		# select the gpio chip
+RS_line = chip.get_line(LCD_RS)		# slect the GPIO line for RS pin
+RS_line.request(consumer = "RS",type=GPIO.LINE_REQ_DIR_OUT)		#Set the RS pin as OUTPUT
 
-RW_line = chip.get_line(LCD_RW)
-RW_line.request(consumer="RW", type = GPIO.LINE_REQ_DIR_OUT)
+RW_line = chip.get_line(LCD_RW)	# select the GPIO line for RW pin
+RW_line.request(consumer="RW", type = GPIO.LINE_REQ_DIR_OUT)	#Set the RW pin as OUTPUT
 
-EN_line = chip.get_line(LCD_E)
-EN_line.request(consumer = "EN",type=GPIO.LINE_REQ_DIR_OUT)
+EN_line = chip.get_line(LCD_E)		# select the GPIO line for EN pin
+EN_line.request(consumer = "EN",type=GPIO.LINE_REQ_DIR_OUT)		#Set the EN pin as OUTPUT
 
-D4_line = chip.get_line(LCD_D4)
-D4_line.request(consumer = "D4",type=GPIO.LINE_REQ_DIR_OUT)
+D4_line = chip.get_line(LCD_D4)	#slect the GPIO line for D4 pin
+D4_line.request(consumer = "D4",type=GPIO.LINE_REQ_DIR_OUT)		#Set he D4 pin as OUTPUT
 
-D5_line = chip.get_line(LCD_D5)
-D5_line.request(consumer = "D5",type=GPIO.LINE_REQ_DIR_OUT)
+D5_line = chip.get_line(LCD_D5)	#Select the GPIO line for D5 pin
+D5_line.request(consumer = "D5",type=GPIO.LINE_REQ_DIR_OUT)		#Set the D5 pin as OUTPUT
 
-D6_line = chip.get_line(LCD_D6)
-D6_line.request(consumer="D6",type=GPIO.LINE_REQ_DIR_OUT)
+D6_line = chip.get_line(LCD_D6)		# Select the GPIO line for D6 pin
+D6_line.request(consumer="D6",type=GPIO.LINE_REQ_DIR_OUT)	#Set the D6 pin as OUTPUT
 
-D7_line = chip.get_line(LCD_D7)
-D7_line.request(consumer = "D6",type=GPIO.LINE_REQ_DIR_OUT)
+D7_line = chip.get_line(LCD_D7)	# Select the GPIO line for D7 pin
+D7_line.request(consumer = "D6",type=GPIO.LINE_REQ_DIR_OUT)	# Set the D7 pin as OUTPUT
 
  
 # Define some device constants
