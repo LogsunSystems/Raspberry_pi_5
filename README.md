@@ -17,6 +17,7 @@ To create Virual Environment of python in Raspberry Pi
 
 1. 	Open the terminal by Pressing `Ctrl+Alt+T`
 2.	Type the following command to create new virtual environment
+
 	```
 		python3 -m venv --system-site-packages .venv
 	```
