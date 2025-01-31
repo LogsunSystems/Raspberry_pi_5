@@ -11,6 +11,6 @@ pin is required for **RST** i.e. *Reset* signal.
 
 |Rasoberry pi|RFID Reader |
 |:----------:|:----------:|
-|	SV5		 |J2(LCD_DATA)|
-|	SV6		 |J1(LCD_CMD) |
+|	SV5		 |J1(LCD_CMD) |
+|	SV6		 |J2(LCD_DATA)|
 |	SV7		 |J3(RFID)    |
