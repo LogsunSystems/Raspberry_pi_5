@@ -5,19 +5,19 @@ import time
 from SimpleMFRC522 import SimpleMFRC522
 
 #define the LCD pins
-LCD_RS = 5
-LCD_E  = 12
-LCD_RW = 6
-LCD_D4 = 15
-LCD_D5 = 17
-LCD_D6 = 18
-LCD_D7 = 22
+LCD_RS = 4  
+LCD_E  = 18
+LCD_RW = 17
+LCD_D4 = 13
+LCD_D5 = 19
+LCD_D6 = 16
+LCD_D7 = 26
 
 chip = GPIO.Chip('gpiochip4') #set the GPIO chip
 RST = chip.get_line(14) # Engauge the GPIO line from RST pin
 reader = SimpleMFRC522()    #Create the object for RFID Reader
 
-RS_line = chip.get_line(LCD_RS) 
+RS_line = chip.get_line(LCD_RS)
 RS_line.request(consumer = "RS",type=GPIO.LINE_REQ_DIR_OUT)
 
 RW_line = chip.get_line(LCD_RW)
@@ -64,7 +64,7 @@ def main():
         print(id) 
         print(text)
         lcd_string("RFID Reader",LCD_LINE_1)
-        lcd_string(id,LCD_LINE_2) #Dsiplay RFID TAG value on LCD
+        lcd_string(str(id),LCD_LINE_2) #Dsiplay RFID TAG value on LCD
  
         time.sleep(3) # 3 second delay
 
@@ -158,7 +158,7 @@ if __name__ == '__main__':
         pass
     finally:
         #Release all the GPIO pins as we have not to do anything more
-        RST.release()
+        #RST.release()
         RS_line.release()
         EN_line.release()
         D4_line.release()
